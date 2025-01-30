@@ -12,7 +12,7 @@ const config: Config = {
   baseUrl: '/',
 
   organizationName: 'Firelink Library',
-  projectName: 'nome-do-repo',
+  projectName: 'docusaurus-template',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -29,7 +29,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/firelink-library/nome-do-repo/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/firelink-library/docusaurus-template/tree/main/packages/create-docusaurus/templates/shared/',
           routeBasePath: '/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex]
@@ -40,7 +40,7 @@ const config: Config = {
             xslt: true,
           },
           editUrl:
-            'https://github.com/firelink-library/nome-do-repo/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/firelink-library/docusaurus-template/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -70,7 +70,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/firelink-library/docusaurus-template',
           label: 'GitHub',
           position: 'right',
         },
