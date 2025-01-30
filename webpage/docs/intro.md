@@ -1,47 +1,50 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
+# Introdução
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Este é apenas um template para você poder criar um repositório de conteúdo
+rapidamente e com uma configuração opinionada do Docusaurus.
 
-## Getting Started
+Neste repositório, já estão configurados:
 
-Get started by **creating a new site**.
+* A base do docusaurus, que fica dentro do diretório `webpage`
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## 1. O que você precisa fazer
 
-### What you'll need
+### 1.1. Modificar o nome da página
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## 2. O que você pode querer fazer
 
-## Generate a new site
+Não vou delinear todas as funcionalidades do docusaurus. Para isso, existe a
+[documentação do docusaurus](https://docusaurus.io/docs/next). No entanto, há
+algumas coisas que você pode querer fazer e que são esperadas pela natureza do
+conteúdo que vamos publicar aqui. Para essas, vou deixar um pequeno tutorial.
 
-Generate a new Docusaurus site using the **classic template**.
+### 2.1. Adicionando equações `LaTeX`
 
-The classic template will automatically be added to your project after you run the command:
+**Inline**
 
-```bash
-npm init docusaurus@latest my-website classic
+```LaTeX
+Let $f\colon[a,b]\to\R$ be Riemann integrable. Let $F\colon[a,b]\to\R$ be
+$F(x)=\int_{a}^{x} f(t)\,dt$. Then $F$ is continuous, and at all $x$ such that
+$f$ is continuous at $x$, $F$ is differentiable at $x$ with $F'(x)=f(x)$.
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Let $f\colon[a,b]\to\R$ be Riemann integrable. Let $F\colon[a,b]\to\R$ be
+$F(x)=\int_{a}^{x} f(t)\,dt$. Then $F$ is continuous, and at all $x$ such that
+$f$ is continuous at $x$, $F$ is differentiable at $x$ with $F'(x)=f(x)$.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+**Bloco**
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
+```LaTeX
+$$
+I = \int_0^{2\pi} \sin(x)\,dx
+$$
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+$$
+I = \int_0^{2\pi} \sin(x)\,dx
+$$
